@@ -1,0 +1,24 @@
+﻿<Window x:Class="Nomber.MainWindow"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Nomber"
+        mc:Ignorable="d"
+        Title="IPspy" Height="450" Width="748">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock Text="IP:" Margin="108,33,436,331" FontSize="30"/>
+        <TextBox x:Name="apitb" Margin="168,33,132,331" FontSize="30" TextBlock.FontSize="30"/>
+        <Button x:Name="start" Margin="274,328,274,43" Background="#FFC91B1B" BorderBrush="#FF630000" Content="Start" FontSize="15" Click="start_Click" Foreground="White"/>
+        <Label Margin="10,151,514,224" x:Name="cname" FontSize="15" Content=""/>
+        <Label Margin="10,187,514,183" x:Name="city" FontSize="15"/>
+        <Label Margin="10,219,514,151" x:Name="org" FontSize="15"/>
+        <Label Margin="274,151,250,224" x:Name="currency_code" FontSize="15" Content=""/>
+        <Label Margin="274,187,250,183" x:Name="type" FontSize="15"/>
+        <Label Margin="274,219,250,151" x:Name="completed_requests" FontSize="15"/>
+    </Grid>
+</Window>
